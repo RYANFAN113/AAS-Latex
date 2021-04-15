@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.3.15)  14 APR 2021 00:56
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.3.15)  15 APR 2021 21:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1265,8 +1265,7 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count319
 \@lastruleclass=\count320
 \@thisrulewidth=\dimen288
-)
-No file template.aux.
+) (./template.aux)
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1285,7 +1284,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 17.
 .................................................
 . fontspec info: "setup-math"
@@ -1378,11 +1377,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 . - 'normal' (m/n) with NFSS spec.: <->"SimHei/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
+LaTeX Font Info:    Try loading font information for U+msa on input line 111.
 (d:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 111.
  (d:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1414,16 +1413,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 . <->"FangSong/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
-
-Underfull \hbox (badness 1038) in paragraph at lines 127--133
-[]\TU/SimSun(0)/m/n/10.53937 在 正 文 开 始 之 前\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 需 要 定 义[]\TU/lmtt/m/n/10.53937 \cntitle \TU/SimSun(0)/m/n/10.53937 来 定
- []
-
-
-Underfull \hbox (badness 3713) in paragraph at lines 127--133
-\TU/SimSun(0)/m/n/10.53937 义 中 文 标 题\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 用[]\TU/lmtt/m/n/10.53937 \cnauthor \TU/SimSun(0)/m/n/10.53937 来 定 义 中 文 作 者\TU/lmr/m/n/10.53937 ,
- []
-
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1462,38 +1451,166 @@ Overfull \vbox (13.2832pt too high) has occurred while \output is active []
 
 
 ]
-
-LaTeX Font Warning: Command \sl invalid in math mode on input line 214.
-
-
-LaTeX Font Warning: Command \sl invalid in math mode on input line 214.
+Overfull \hbox (16.5466pt too wide) in alignment at lines 155--155
+[][][][]
+ []
 
 
-LaTeX Font Warning: Command \sl invalid in math mode on input line 214.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Font Warning: Command \sl invalid in math mode on input line 214.
-
-File: Image/01.eps Graphic file (type eps)
-<Image/01.eps>
 
 Overfull \vbox (12.24226pt too high) has occurred while \output is active []
 
  [2
 
 ]
-Underfull \hbox (badness 7168) in paragraph at lines 284--287
+File: Image/counts.eps Graphic file (type eps)
+<Image/counts.eps>
+File: Image/rate.eps Graphic file (type eps)
+<Image/rate.eps>
+File: Image/wordcloud.eps Graphic file (type eps)
+<Image/wordcloud.eps>
+
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [3]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [5]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [7]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [8]
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [9]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [10]
+Missing character: There is no λ in font cmmi10!
+Missing character: There is no λ in font cmmi10!
+
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [11]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [12]
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [13]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [14]
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [15]
+Underfull \hbox (badness 10000) in paragraph at lines 522--525
+\TU/lmr/m/n/10.53937 based Novelty Detection for mobile robots.
+ []
+
+
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [16]
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [17]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [18]
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [19]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [20]
+Overfull \hbox (2.33975pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (12.31282pt too high) has occurred while \output is active []
+
+ [21]
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [22]
+
+LaTeX Font Warning: Command \sl invalid in math mode on input line 740.
+
+
+LaTeX Font Warning: Command \sl invalid in math mode on input line 740.
+
+
+LaTeX Font Warning: Command \sl invalid in math mode on input line 740.
+
+
+LaTeX Font Warning: Command \sl invalid in math mode on input line 740.
+
+File: Image/01.eps Graphic file (type eps)
+<Image/01.eps>
+
+Underfull \hbox (badness 7168) in paragraph at lines 810--813
 []\TU/lmr/m/n/10.53937 T[]X \TU/SimSun(0)/m/n/10.53937 的 参 考 文 献 的 引 用 比 较 方 便\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 比
  []
 
 
-Underfull \hbox (badness 7186) in paragraph at lines 284--287
+Underfull \hbox (badness 7186) in paragraph at lines 810--813
 \TU/SimSun(0)/m/n/10.53937 以 输 入 \TU/lmr/m/n/10.53937 “The T[]Xbook[]\TU/lmtt/m/n/10.53937 $^{[1]}$\TU/lmr/m/n/10.53937 ” \TU/SimSun(0)/m/n/10.53937 得 到 想 要
- []
-
-
-Overfull \hbox (0.62778pt too wide) in alignment at lines 365--365
-[][][][][]
  []
 
 
@@ -1504,18 +1621,25 @@ Overfull \hbox (2.33975pt too wide) has occurred while \output is active
 
 Overfull \vbox (12.31282pt too high) has occurred while \output is active []
 
- [3]
+ [23]
+Overfull \hbox (0.62778pt too wide) in alignment at lines 891--891
+[][][][][]
+ []
+
 File: Image/02a.eps Graphic file (type eps)
 <Image/02a.eps>
 File: Image/02b.eps Graphic file (type eps)
 <Image/02b.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Overfull \vbox (12.24226pt too high) has occurred while \output is active []
+
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 938--939
 []\TU/lmr/m/n/7.52812 The Math Works.Image Processing Toolbox for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 938--939
 \TU/lmr/m/n/7.52812 Use with Matlab: User$[]$s Guide [Online], available:
  []
 
@@ -1523,10 +1647,6 @@ File: Image/ssl.eps Graphic file (type eps)
 <Image/ssl.eps>
 File: Image/nmzuo.eps Graphic file (type eps)
 <Image/nmzuo.eps>
-
-Overfull \vbox (12.24226pt too high) has occurred while \output is active []
-
- [4]
 File: Image/zz.eps Graphic file (type eps)
 <Image/zz.eps>
 
@@ -1537,18 +1657,14 @@ Overfull \hbox (2.33975pt too wide) has occurred while \output is active
 
 Overfull \vbox (12.31282pt too high) has occurred while \output is active []
 
- [5] (./template.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [25] (./template.aux) ) 
 Here is how much of TeX's memory you used:
- 16545 strings out of 494927
- 370030 string characters out of 6177075
- 448582 words of memory out of 5000000
- 20195 multiletter control sequences out of 15000+600000
+ 16866 strings out of 494927
+ 391159 string characters out of 6177075
+ 489151 words of memory out of 5000000
+ 20511 multiletter control sequences out of 15000+600000
  541245 words of font info for 100 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,13n,70p,10499b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,70p,10499b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on template.pdf (5 pages).
+Output written on template.pdf (25 pages).

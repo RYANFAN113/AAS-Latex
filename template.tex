@@ -439,36 +439,36 @@
 
   \subsection{智能经济}
   \subsubsection{空中交通管制}
-  广播式自动相关监视1(ADS-B)是一种飞机监视技术, 为提高态势感知能力的主要监视手段. 但由于ADS-B协议缺乏足够的安全考虑, 尤其是在数据完整性及认证方面,  针对ADS-B数据的攻击模式层出不穷, 这需要高效的攻击检测策略来提高数据的安全性77. 
+  广播式自动相关监视1(ADS-B)是一种飞机监视技术, 为提高态势感知能力的主要监视手段. 但由于ADS-B协议缺乏足够的安全考虑, 尤其是在数据完整性及认证方面,  针对ADS-B数据的攻击模式层出不穷, 这需要高效的攻击检测策略来提高数据的安全性77.
 
-  ADS-B数据是每秒更新频率两次的时序数据. 数据连续且动态, 在设计实时检测方案时, 应考虑低处理时延和动态特性的自适应性. 针对ADS-B数据的正常模式, 攻击检测方案必须采用概念漂移进行更新, 这就增加了算法设计对在线和自适应需求的难度. 目前, 针对ADS-B数据的安全解决方案还处于研究阶段, 同时目前的检测方法还不可能有效地检测出各种攻击模式. 基于此, Li, T.等77提出了序列协同检测策略, 将各种检测方法与攻击概率相结合, 提高对攻击行为多样性和不确定性的适应能力. 具体地, 该方法针对连续ADS-B数据, 将飞行计划验证、单节点数据检测和群数据检测等多种检测方法联合起来, 生成综合攻击概率, 作为判断数据攻击的参考依据. 为了提高阳性检测率, 该方法还提出了地对地、地对空和空对空协同检测来增强每个节点的检测能力. 
+  ADS-B数据是每秒更新频率两次的时序数据. 数据连续且动态, 在设计实时检测方案时, 应考虑低处理时延和动态特性的自适应性. 针对ADS-B数据的正常模式, 攻击检测方案必须采用概念漂移进行更新, 这就增加了算法设计对在线和自适应需求的难度. 目前, 针对ADS-B数据的安全解决方案还处于研究阶段, 同时目前的检测方法还不可能有效地检测出各种攻击模式. 基于此, Li, T.等77提出了序列协同检测策略, 将各种检测方法与攻击概率相结合, 提高对攻击行为多样性和不确定性的适应能力. 具体地, 该方法针对连续ADS-B数据, 将飞行计划验证、单节点数据检测和群数据检测等多种检测方法联合起来, 生成综合攻击概率, 作为判断数据攻击的参考依据. 为了提高阳性检测率, 该方法还提出了地对地、地对空和空对空协同检测来增强每个节点的检测能力.
 
   然而, 上述方法不能充分挖掘大规模ADS-B数据价值来支持攻击检测, 无法适应动态数据波动的概念漂移, 并且依赖于系统或参考数据序列的先验知识, 无法对未知攻击模式有效识别. 考虑到皮质学习算法(HTM)擅长处理流数据的分类与预测, Li, T.等77提出了一种基于层次时态记忆的ADS-B数据序列攻击在线检测模型. 其采用二进制编码, 将ADS-B数据转化为具有时空相关性的稀疏分布表示, 并应用HTM方法建立描述ADS-B数据正常模式的模型. 利用HTM进行预测后, 再由新颖性分析模型进行新颖性检测, 新颖性分析模型设计了偏差分析、序列分析和自适应阈值检测三个模块以建立综合模型: 偏差分析模块用于与预测值和测量值进行比较, 通过逐一计算正常行为与攻击行为在权值和比特偏差上的差异, 建立了新颖性检测的证据；序列分析模块用于检查特定时间周期的数据统计特性, 通过对时间相关性的分析, 进一步建立了区分新颖性的准则；自适应阈值检测模块, 利用阈值检测攻击行为生成决策, 同时利用攻击数据百分比更新阈值, 降低虚警率. 最后通过统计分析对攻击行为进行区分. 该方法在从opensky上采集了真实ADS-B数据并验证了有效性, 该方法能够减小检测时延, 提高检测精度, 减轻概念漂移的影响.
 
   （1.	Australia, A. (2012). How ADS-B works.
   77.Li, T., Wang, B., Shang, F., Tian, J. (2019). Online sequential attack detection for ADS-B data based on hierarchical temporal memory. ）
-  
+
   \subsubsection{异常汇率监测}
   （Ergen, T. (2019). Unsupervised anomaly detection with lstm neural networks. IEEE Transactions on Neural Networks and Learning Systems.）
 
   \subsection{其他}
 
-  \subsubsection{核事故识别} 
-  对于核电厂这类对安全性要求极高的建筑物, 快速可靠地识别异常事件(例如瞬态和事故)被认为是极为重要的. 目前基于深度学习的系统已经能够在核事故识别问题(NAIP)中取得令人鼓舞的结果54, 不仅能克服梯度消失问题, 还可以通过实现整流器激活功能来实现计算网络突触的活动. 然而, 神经网络的计算开销、黑箱特性及其对噪声不敏感的特性, 可能将未知类数据点分配给其现有的已知类之一. 倘若将其实施到关键应用程序, 错误标识可能会影响操作员采取使状况恶化的错误措施, 这会对安全性产生重大影响. 因此, 有必要使深度神经网络能够生成“未知”响应. 
+  \subsubsection{核事故识别}
+  对于核电厂这类对安全性要求极高的建筑物, 快速可靠地识别异常事件(例如瞬态和事故)被认为是极为重要的. 目前基于深度学习的系统已经能够在核事故识别问题(NAIP)中取得令人鼓舞的结果54, 不仅能克服梯度消失问题, 还可以通过实现整流器激活功能来实现计算网络突触的活动. 然而, 神经网络的计算开销、黑箱特性及其对噪声不敏感的特性, 可能将未知类数据点分配给其现有的已知类之一. 倘若将其实施到关键应用程序, 错误标识可能会影响操作员采取使状况恶化的错误措施, 这会对安全性产生重大影响. 因此, 有必要使深度神经网络能够生成“未知”响应.
 
-基于此, Pinheiro, V. H. C.等55提出了基于深度整流神经网络DRNN的识别系统，并将基于深度自编码器的类学习模型DOCAE作为系统的补充方法, 为NAIP系统提供“未知”的响应识别能力. 该方法首先采用DRNN接收输入状态变量并将其分类为候选操作情况, 同时预先经过分类操作样本训练的DOCAE也将收到输入状态变量. 接着确定由DOCAE生成的输入变量与输出匹配变量之间的重构误差. 与原始变量验证准则相似, 若输入变量的重构误差又恰好等于或小于相应变量的$ \varDelta x_{\max} $, 则该变量将被视为有效输入. 若输入的所有变量均有效, 则系统会将由DRNN识别的操作情况作为输出. 若不是, 系统将返回“未知”作为响应. 该方法已在巴西压水堆的13种运行情况数据进行的多次实验. 
+  基于此, Pinheiro, V. H. C.等55提出了基于深度整流神经网络DRNN的识别系统，并将基于深度自编码器的类学习模型DOCAE作为系统的补充方法, 为NAIP系统提供“未知”的响应识别能力. 该方法首先采用DRNN接收输入状态变量并将其分类为候选操作情况, 同时预先经过分类操作样本训练的DOCAE也将收到输入状态变量. 接着确定由DOCAE生成的输入变量与输出匹配变量之间的重构误差. 与原始变量验证准则相似, 若输入变量的重构误差又恰好等于或小于相应变量的$ \varDelta x_{\max} $, 则该变量将被视为有效输入. 若输入的所有变量均有效, 则系统会将由DRNN识别的操作情况作为输出. 若不是, 系统将返回“未知”作为响应. 该方法已在巴西压水堆的13种运行情况数据进行的多次实验.
 
-（54.	dos Santos, M. C., Pinheiro, V. H. C., do Desterro, F. S. M., de Avellar, R. K., Schirru, R., dos Santos Nicolau, A, A. M. M. (2019). Deep rectifier neural network applied to the accident identification problem in a PWR nuclear power plant. Annals of Nuclear Energy, 133, 400-408.
-55.	Pinheiro, V. H. C., dos Santos, M. C., do Desterro, F. S. M., Schirru, R. (2020). Nuclear Power Plant accident identification system with “don’t know” response capability: Novel deep learning-based approaches. Annals of Nuclear Energy, 137, 107111.）
+  （54.	dos Santos, M. C., Pinheiro, V. H. C., do Desterro, F. S. M., de Avellar, R. K., Schirru, R., dos Santos Nicolau, A, A. M. M. (2019). Deep rectifier neural network applied to the accident identification problem in a PWR nuclear power plant. Annals of Nuclear Energy, 133, 400-408.
+  55.	Pinheiro, V. H. C., dos Santos, M. C., do Desterro, F. S. M., Schirru, R. (2020). Nuclear Power Plant accident identification system with “don’t know” response capability: Novel deep learning-based approaches. Annals of Nuclear Energy, 137, 107111.）
 
-  
+
   \subsubsection{海洋导管架平台状态监测}
   海洋平台是开发海底油气资源的基础结构，也是生产作业与生活基地。其设计周期和设计质量直接影响到海洋油气资源开发的成本和效率, 研究者们找到一种评估其结构健康状况的方法, 以为海洋平台结构的安全评价与寿命预测提供科学依据73.
 
   Mojtahedi, A.等73提出了一种模糊-磷虾群混合方法, 该方法首次将模糊与磷虾群相结合(FKH)方法应用于海洋导管架平台状态新颖性检测过程. 在该方法中, 利用ABAQUS软件建立了结构的有限元模型, 并根据物理模型结果进行数值模型修正.采用遗传算法和磷虾群算法设计模糊系统, 使系统的诊断能力最大化. 利用有限元软件计算模糊集的中值, 利用遗传算法并通过优化算法得到标准差. 最后采用智能算法和模糊逻辑相结合的混合系统对损伤进行定位和判断, 采用遗传进化算法对隶属函数进行优化, 系统还输出了损伤率和损伤位置. 该方法在位于波斯湾的SPD9导管架平台试验模型试验模态参数上进行了有效性验证.
 
   （73.	Mojtahedi, A., Hokmabady, H., Abyaneh, S. S. Z. (2019). Establishment of a hybrid Fuzzy–Krill Herd approach for Novelty Detection applied to damage classification of offshore jacket-type structures. Journal of Marine Science and Technology, 24(3), 812-829.）
-  
+
   \section{图像领域新颖性检测}
   主要的思想是，如果我们只在正常样本的训练集上训练我们的Auto-encoder，则我们重构出来的图像会比较趋近于正常样本。利用这一个假设/性质，在推理阶段，即使输入的图像是异常样本，我们重构出来的图像也会像正常样本。所以我们只需对比原图和重构后的图，就可以判断输入的图像是否为异常，甚至可以定位到异常区域.
 
@@ -479,38 +479,228 @@
   \subsubsection{工业缺陷检测}
   (Czimmermann, T., Ciuti, G., Milazzo, M., Chiurazzi, M., Roccella, S., Oddo, C. M. (2020). Visual-Based Defect Detection and Classification Approaches for Industrial Applications—A SURVEY. Sensors, 20(5), 1459.)
 
-  \subsection{智慧工业}
+  \subsection{智慧医疗}
+  \subsubsection{COVID-19患者检测}
+  （Shaban, W. M., Rabie, A. H., Saleh, A. I. (2020). A new COVID-19 Patients Detection Strategy (CPDS) based on hybrid feature selection and enhanced KNN classifier. Knowledge-Based Systems, 205, 106270.）
+
+  \subsubsection{乳腺癌检测}
+  （Shivhare, E. (2020). Breast cancer diagnosis from mammographic images using optimized feature selection and neural network architecture. International Journal of Imaging Systems and Technology.）
+
+  \subsubsection{肿瘤检测}
+  （Wang, J., Xu, Z., Pang, Z. F., Huo, Z. (2020). Tumor detection for whole slide image of liver based on patch-based convolutional neural network. Multimedia Tools and Applications, 1-12. ）
+
+  \subsubsection{细胞表型检测}
+  细胞表型检测可以帮助了解相关基因、蛋白、药物的机理，是生命科学研究中不可或缺的手段。传统的细胞表型检测依赖于有监督机器学习, 但其主要局限在于需对每种新测定法或实验环境变化进行分类训练. 由于罕见的表型类别可能不会在试验中表现出来, 因此将运用新颖性检测技术来完成未知表型的检测.
+
+  调查研究发现19, 深度学习可以对数据进行特征自学习, 从而克服对有监督图像特征的依赖性. 基于此, Sommer, C.等19提出了一种基于深度学习和新颖性检测的机器学习框架Cell-Cognition Explorer. 该方法中应用深度学习方法直接从原始图像像素数据中推断单个细胞对象的数字描述符；并应用新颖性检测方法学习阴性对照细胞群体内自然表型变异的统计模型, 为检测大规模筛选数据中的任意形态偏差, 甚至对于先验未知的表型, 提供了准确的分类边界；最后根据细胞形态与阴性对照图像的偏差产生表型评分. 该方法对图像衍生特征的深度学习, 即使事先不知道细胞表型, 仍可灵敏且准确完成细胞表型检测. 该方法在核分裂和有丝分裂细胞形态的几个大规模筛选数据集上进行了有效性验证.
+
+  （19.	Sommer, C., Hoefler, R., Samwer, M. (2017). A deep learning and Novelty Detection framework for rapid phenotyping in high-content screening. Molecular biology of the cell, 28(23), 3428-3436.）
+
+  \subsection{智慧城市}
+  \subsubsection{智慧安防}
+  视频异常活动分析在城市生活的安全和监控应用中已受到越来越多的关注. 在大多视频分析任务中, 通常依靠标记数据来学习识别模型, 而连续对其进行标记是一项手动繁琐的工作, 同时更多的标注数据并不意味着一定能帮助识别模型更好地学习9(有时由于数据点嘈杂, 性能甚至可能下降). 因此, 选择信息量最大的样本训练识别模型变得至关重要. 这项研究通常将异常活动排除在训练阶段之外, 因此, 识别异常活动任务可定义为新颖性检测任务.
+
+  典型性(Typicality)是一种简单而强大的技术, 可用于压缩训练数据以学习良好的分类模型, 也可用于视觉识别任务的信息子集选择问题中. 由于在连续视频剪辑中, 活动与其之前的活动具有强相关性, Bappy, J. H.等10基于信息论中典型性概念的方法, 通过利用活动间的时间关系以检测视频中的异常活动. （什么新子集选择方法）具体地：假设视频中出现的活动样本形成了马尔可夫链, 通过该方法提出的新子集选择方法将利用信息论的“典型集”来自适应学习识别模型；接着设定阈值并计算测试样本的熵及非典型性得分；最后判断, 若大于阈值, 则将其视为异常类别, 否则视为正常类别. 该方法除了较好地检测了视频异常活动外, 还大大减少了视觉识别任务标记样本的人力, 同时与使用完整训练集的模型相比, 该方法仅使用完整训练集的一小部分即可达到相同甚至更好的性能. 该方法在活动分类任务的VIRAT和MPII-Cooking数据集上验证了其有效性.
+
+  （9.	Lapedriza, A., Pirsiavash, H., Bylinskii, Z. (2013). Are all training examples equally valuable?. arXiv preprint arXiv:1311.6510.
+  10.	Bappy, J. H., Paul, S., Tuncel, E, A. K. (2019). Exploiting Typicality for Selecting Informative and Anomalous Samples in Videos. IEEE Transactions on Image Processing, 28(10), 5214-5226.）
+
+  \subsubsection{重识别任务}
+  重识别任务被定义为在不同摄像机视图下匹配个人的过程, 其核心问题是给定一个查询样本(query), 并在候选行人库(gallery)找到与query类似的目标12. 不同于封闭场景, 开放场景中的gallery会动态发展, 因此, 给定的查询样本并不一定属于gallery. 在该场景下, 首先必须确定query是否属于gallery, 若query属于gallery, 则执行匹配过程；否则, query将以新身份添加到gallery中得到更新后的gallery, 如图7所示. 我们将这一阶段任务定义为新颖性检测任务, 该任务需要识别以前未在系统中注册的新人或未知的个人.
+
+  Marín-Reyes, P. A.等12提出了一种基于面部的无阈值方法来解决该问题. 首先进行视频数据初始化, 只保留包含正面的帧. 接着进行后验概率的等距对数比变换(ILRA), ILRA阶段包括了三个主要过程：建模阶段、新颖性检测阶段和典型性判断阶段. 建模阶段, 其从面部提取局部和深度计算描述符(该描述符表现出对称性)；新颖性检测阶段, 其利用模型特征来训练单分类器以检测个体的新颖性；典型性判断阶段, 根据新颖性检测判断, 若其为非典型人, 则将以新身份添加到图库；反之, 则进行分类处理. 该方法在真实的议会会议记录中进行了评估, 评估显示即便在干预者的位姿和位置方面具有挑战性的变化的场景下, 该方法仍然取得了显著效果.
+
+  (12.	Marín-Reyes, P. A., Irigoien, I., Sierra, B., Lorenzo-Navarro, J., Castrillón-Santana, M. (2019). ILRA: Novelty Detection in Face-Based Intervener Re-Identification. Symmetry, 11(9), 1154.)
+
+  \subsubsection{机器人特定勘探和检查任务}
+  在执行勘探和检查任务中13, 机器人会探索周围环境, 并使用感测到的信息建立正常性模型. 构建模型后, 其将在探索阶段的相同路线上巡逻(检查阶段)以发现新颖性. 尽管探索及检查阶段路径都相同, 但由于运行条件的原因, 无法确保执行阶段机器人位置总相同. 因此, 机器人处理此类问题时需要一个在线新颖性检测机制, 在机器人接收到来自环境的新信息时创建一个新模型, 或者在现有信息不再可用时删除该模型.
+
+  当前的绝大多数方法只使用静态正态模型来检测新颖性, 暂未考虑机器人感知间的时间关系, 其中新颖性仅由当前信息定义.基于联结主义系统的在线方法不仅可以逐步建立正态性模型, 还可以使模型适应输入数据的动态变化13, 即记录新信息而忘记旧信息. 为此, Özbilge, E.15提出了一种基于期望的在线神经网络新颖性检测系统, 在机器人探索环境的同时, 动态地学习新数据和网络结构以预测下一个期望数据. 首先分别提取Kinect传感器的颜色和深度数据的全局特征, 然后将捕获特征提交至改进的演变联结主义系统(ECoS)中, 该系统没有固定的网络结构, 网络会根据需要对模型进行增加或删减. Özbilge, E.引入了一个全局新颖性阈值, 当网络预测误差超过阈值时, 将所有输入数据过滤为新数据, 同时引入了自适应局部新颖性阈值, 在机器人处理高不确定性感官数据时, 对模型的预测误差进行区域性检查.
+
+  在此基础上, Contreras-Cruz, M. A.等14提出了一种基于演变联结主义系统的视觉新颖性检测框架, 解决了机器人在视觉探索和检查任务中新颖性检测方法的自动设计问题. 具体地, 该系统首先使用MobileNetV2的预训练卷积神经网络以提取深层特征来表示机器人捕获的视觉信息. 接着使用简易演变联结主义系统(SECoS)或地理加权回归网络(GWR网络)处理特征向量并构建环境模型.   该方法中使用全局优化技术—人工蜂群算法(ABC)作为优化工具, 优化模型参数, 以设计针对特定机器人应用的新颖性检测模型. 最后将演化的模型用于检查阶段, 机器人再次执行其路径并搜索新颖的物体. 该方法在一个充满挑战的室外场景中(涉及计算机视觉中的典型问题)—无人飞行器在具有光照变化且存在物体几何变换和遮挡的环境中捕获图像, 验证了所提出的视觉新颖性检测系统在室外应用中的实用性.
+
+  （13.	Özbilge, E. (2016). On-line expectation-based Novelty Detection for mobile robots. Robotics and Autonomous Systems, 81, 33-47.
+  14.	Contreras-Cruz, M. A., Ramirez-Paredes, J. P., Hernandez-Belmonte, U. H. (2019). Vision-Based Novelty Detection Using Deep Features and Evolved Novelty Filters for Specific Robotic Exploration and Inspection Tasks. Sensors, 19(13), 2965.
+  15.	Özbilge, E. (2019). Experiments in online expectation-based novelty-detection using 3D shape and colour perceptions for mobile robot inspection. Robotics and Autonomous Systems, 117, 68-79.）
+
+  \subsubsection{气候新颖性}
+  （Kumar, P. A. (2017). A transfer learning framework for traffic video using neuro-fuzzy approach. Sādhanā, 42(9), 1431-1442.）
+
+  \subsubsection{建筑信息建模}
+  （Koo, B. (2018). Applying novelty detection to identify model element to IFC class misclassifications on architectural and infrastructure Building Information Models. Journal of Computational Design and Engineering, 5(4), 391-400.）
+
+  \subsection{智能经济}
+  \subsection{其他}
+  \subsubsection{手势识别}
+  手势识别技术是一项重要的研究内容, 手势的直观性和强大语义使得人机交互可以利用具有巨大潜力的基于手势界面, 帮助用户更方便自然地同计算机系统交互. 在手势识别数据集中, 不仅存在预定义的手势模式, 也存在与任何类别都不匹配的手势模式11, 后者通常被称为新颖性手势. 现实中新颖手势的多样性几乎是无限的, 至少比预定义手势的多样性大得多, 通常我们无法获取每个可能出现的新颖手势, 因此进行新颖手势的识别是一个巨大挑战. 我们把从预定义手势类别中检测新颖手势任务定义为新颖性检测任务.
+
+  Simao, M.等11使用了在生成对抗网络(GAN)框架中受过训练的人工神经网络(ANN)来解决存在新颖手势的分类任务. 具体地：首先使用生成模型(GAN)通过新样本和随机目标向量在线扩展数据集, 判别式模型确定样本类别, 其中, 生成模型性能通过生成样本与实际样本间的距离度量来衡量；通过使用随机目标向量降低平均预测得分, 促进阈值调整；最后设置阈值, 若大于阈值, 则将其视为新颖类别, 否则视为正常类别. 该方法在UC2017 SG和UC2018 DualMyo手势数据集上进行了有效性验证.
+
+  （11.	Simao, M., Neto, P. (2019). Improving Novelty Detection with generative adversarial networks on hand gesture data. Neurocomputing, 358, 437-445.）
+
+  \subsubsection{水飞蓟素检测}
+  （Alexandridis, T. K., Tamouridou, A. A., Pantazi, X. E., Lagopodi, A. L., Kashefi, J., Ovakoglou, G. (2017). Novelty detection classifiers in weed mapping: silybum marianum detection on UAV multispectral images. Sensors, 17(9), 2007.）
+
+  \subsubsection{航天}
+  （Ertl, C. (2019). Identification of Partially Resolved Objects in Space Imagery with Convolutional Neural Networks. The Journal of the Astronautical Sciences.）
+
+
+  \section{文本领域新颖性检测}
+  由于近几年新颖性检测未在智慧工业以及智慧医疗城市加以应用，因此本小节仅总结了智慧城市、智能经济等领域的应用情况.
+
+  \subsection{智慧城市}
+  \subsubsection{新闻报道}
+  多源新闻门户网站内容丰富, 可以有机会从不同角度关注事件的发展. 但随着消息来源和事件数量的急剧增加, 网站可能会过载信息, 因此可能难以找到与其兴趣相关的新闻. 因此如何在新闻流中定位组织新颖性事件变得至关重要.（Aksoy, C., Can, F. (2012). Novelty detection for topic tracking. Journal of the american society for information science and technology, 63(4), 777-795.）
+
+  Zamzami, N.等34提出了一种基于狄利克雷复合多项式指数族近似混合模型(EDCM)和最小消息长度(MML)准则的文档聚类概率模型, 以识别实例的“新颖”对象. 该模型基于MML准则选择最能代表有限EDCM混合数据的模型, 同时使用确定性退火期望最大化(DAEM)算法来进行模型的参数估计, 并使用随机上升梯度参数更新参数. 该方法在TDT-2数据集以及在WebKB数据集上的有效性, 验证了该方法可适用于新闻报道以及网站上“新颖”信息查找任务. 
+
+  （34.	Zamzami, N. (2019). Model selection and application to high-dimensional count data clustering. Applied Intelligence, 49(4), 1467-1488.）
+  
+  \subsubsection{对话系统}
+  随着自然语言处理技术的飞速发展, 诸如虚拟助手和智能扬声器之类的对话系统逐渐在日常生活中扮演至关重要的角色. 对话系统的关键组成部分是将用户话语分类为相应的意图—这通常来自于训练集的预定义类别. 尽管预定义类别可以涵盖大多数对话意图, 但在现实情况中用户经常出现新意图. 这种在没有先验知识情况下检测未知意图的任务, 很显然是一个新颖性检测任务. 
+
+  然而找出用户未知意图是一项巨大挑战28, 通常缺乏示例, 很难获得关于未知意图的先验知识; 另一方面又很难估计未知意图的确切数量. 另外, 由于用户意图同先验知识及上下文通常强相关, 目前对意图的高级语义概念建模仍存在问题29. 在目前的研究中, Kim等30尝试联合训练意图分类器和域外检测器来完成该任务, 其生成方法尝试通过对抗性学习来扩充训练数据, 但该方法在文本数据这类离散数据空间中效果不佳, 并且在训练过程中仍然需要域外示例, 有研究表明31该方法可能不适用于现实数据. Brychcín和Král32则采用了对贯通聚类进行建模的方法, 但该方法并未很好地利用已知意图标签信息, 同时聚类效果欠佳. 
+
+  为了解决上述问题, Lin, T. E.等33提出了一种基于预训练深度神经网络分类器的后处理方法SMDN, 该方法通过SofterMax与深度新颖性检测方法联合预测. 具体地, 首先通过温度缩放来校准softmax输出的置信度以获得更合理的概率分布, 以减少概率空间中的开放空间风险, 并获得用于检测未知意图的校准决策阈值；接着将传统新颖性检测算法(本方法使用LOF)与深度神经网络学习的特征表示相结合, 以从不同角度检测未知意图；最后, 将上述方法的新颖性得分缩放为新颖性概率, 并使用SofterMax进行联合预测. 该方法无需更改模型结构, 便可轻松地应用于预训练的深度神经网络分类器. 其将与已知意图不同的示例分类为未知, 无需任何示例或先验知识. 该方法是首次尝试在没有任何人工干预下检测多回合对话系统中未知意图的方法, 并在三种不同的对话数据集SNIPS, ATIS和SwDA上进行了有效验证实验. 
+
+  （28.	Lin, T. E. (2019). Deep unknown intent detection with margin loss. arXiv preprint arXiv:1906.00434.
+  29.	Pota, M., Marulli, F., Esposito, M., De Pietro, G. (2019). Multilingual pos tagging by a composite deep architecture based on character-level features and on-the-fly enriched word embeddings. Knowledge-Based Systems, 164, 309-323.
+  30.	Kim, J. K. (2018). Joint learning of domain classification and out-of-domain detection with dynamic class weighting for satisficing false acceptance rates. arXiv preprint arXiv:1807.00072.
+  31.	Nalisnick, E., Matsukawa, A., Teh, Y. W., Gorur, D. (2018). Do deep generative models know what they don't know?. arXiv preprint arXiv:1810.09136.
+  32.	Brychcín, T. (2016). Unsupervised dialogue act induction using gaussian mixtures. arXiv preprint arXiv:1612.06572.
+  33.	Lin, T. E. (2019). A post-processing method for detecting unknown intent of dialogue system via pre-trained deep neural network classifier. Knowledge-Based Systems, 186, 104979.）
+  
+  \subsection{智能经济}
+  \subsubsection{商机识别}
+  在竞争激烈的市场中, 识别商机对企业长久发展有着重要的战略意义. Wang, J.等26调研发现专利可以为某个技术领域特定问题提供解决方案26, 其不仅包含了可靠的技术信息, 还反映了技术发展的进步, 同时其中的大量信息从未在其他任何地方公开27, 这可能有助于企业识别新的商机. 专利文件一般包括两种技术信息：结构化的书目信息(例如专利号, 发布日期, 发明人名称和CPC分类), 非结构化的发明信息(例如标题, 摘要, 权利要求和描述). 以往大部分专利分析主要关注专利文档中的结构化书目信息, 因其更易于访问与分析, 目前也有一些研究人员逐步开发基于非结构化专利数据的分析方法. 
+
+  Wang, J.等26基于向量空间模型(VSM) 以探索潜在的技术机会. 其将收集的专利文件预处理为期限文件矩阵. 由于VSM技术存在词汇失配问—其中两个向量即使涉及不同(相同)术语也可能具有相似(不同)的语义, 因此使用了潜在语义分析(LSA)解决这一问题. 该方法还集成了潜在语义分析(LSA)方法与基于角度的离群值检测方法(ABOD), 以解决词汇不匹配和“维度灾害”的问题. 最后通过专利可视化工具(包括专利地图和用户实用工具地图), 对识别出的新颖专利进行研究和分析. 该方法解决了词汇不匹配的问题, 减少了专家选择关键词的繁琐工作, 并且可以分析高维数据空间中的非结构化专利数据. 其在远程医疗行业相关专利上进行了有效性验证, 研究结果表明其能有效地帮助远程医疗公司制定其技术战略. 
+
+  （26.	Wang, J. (2019). A Novelty Detection patent mining approach for analyzing technological opportunities. Advanced Engineering Informatics, 42, 100941.
+  27.	Asche, G. (2017). “80\% of technical information found only in patents”–Is there proof of this?. World Patent Information, 48, 16-28.）
+  
+  \subsubsection{未来数据预测}
+  (Kim, J. (2017). Novelty-focused weak signal detection in futuristic data: Assessing the rarity and paradigm unrelatedness of signals. Technological Forecasting and Social Change, 120, 59-76.)
+
+  \subsection{其他}
+  \subsubsection{文献新颖性检测}
+  各大领域每年在相关会议及期刊发表研究论文数量急剧增加, 例如从2000至2015计算机领域在arXiv平台24发表的科学论文数量增加了约3765％, 若要从中识别新颖学术见解工作量相当大. 同时, 同行评审过程是耗时且存在主观性的, 因此学者们渴望找到一种可以自动推断文献新颖性的方法以节省人力物力. 衡量一篇研究论文的新颖性通常要考虑其所属领域以及其对改变领域研究的贡献程度, 因此是一项具有挑战性的任务. 
+
+  清华大学23率先成为学术文献新颖性检测任务的引领者, 并提出了针对该任务的方法：首先找到与主题相关的句子；其次使用查询、术语扩展、主题分类以消除重复信息. Amplayo, R. K.等24基于此开发了一种新型检测模型, 该模型基于网络表示形式检测方法25,改进了其“仅构建句子的单词共现图, 并未使用完整研究论文数据, 导致句子之间没有任何联系” 这一遗憾, 将识别完整研究论文属性, 从而测量其新颖性. 该方法使用宏观图和微观图, 宏观图使用附件和文档作为节点；微观图使用关键字、主题和单词作为节点. 构建种子图后, 逐步添加论文, 并将图中变化记录为论文的特征集, 最后使用自编码器用作新颖性检测模型. 该方法反映了将研究文献添加到图形后的图形结构变化, 并收集了arXiv计算机科学领域中2000年到2013年12月31日之间所有可访问的pdf文件作为研究对象, 进行有效性验证. 
+
+  （23.	Zhuang, L.(2006, August). Parameter optimization of kernel-based one-class classifier on imbalance text learning. In Pacific Rim International Conference on Artificial Intelligence (pp. 434-443). Springer, Berlin, Heidelberg.
+  24.	Amplayo, R. K., Hong, S. (2018). Network-based approach to detect novelty of scholarly literature. Information Sciences, 422, 542-557.
+  25.	Mihalcea, R.,  (2006, June). Proceedings of TextGraphs: the First Workshop on Graph Based Methods for Natural Language Processing. In Proceedings of TextGraphs: the First Workshop on Graph Based Methods for Natural Language Processing.）
+  
+  \subsubsection{文本流中新单词组合}
+  （Damaschke, P. (2017). Calculating approximation guarantees for partial set cover of pairs. Optimization Letters, 11(7), 1293-1302.）
+
+（Damaschke, P. (2017). Calculating approximation guarantees for partial set cover of pairs. Optimization Letters, 11(7), 1293-1302.）
 
 
 
 
 
+\section{其他领域新颖性检测}
+\subsection{智慧工业}
+\subsubsection{半导体制造}
+半导体制造是一个高度复杂的过程, 在该流程中晶圆通常要经过数百个步骤, 其转移通常依赖于自动化物料处理系统(AMHS). AMHS是复杂集成控制系统, 它们可能会导致传输延迟并破坏生产进度, 从而导致瓶颈机器的闲置和生产损失, 因此AMHS的运输能力对稳定生产而言至关重要81. 目前的部分研究依赖于确定性过程和任务时间约束, 但实际上经常发生随机中断, 例如设施故障和返工过程. 
+
+调度方法是解决此类生产不确定性的实用解决方案. 尽管有各种调度规则可用82,83,84, 但没有绝佳的已知规则, 因此需要适当调整规则以匹配特定动态生产条件. 研究85,86提出了数据驱动的方法来证明动态选择规则的好处, 但这些方法忽略了出现不平衡问题的可能性, 即一个规则(多数类别)的事件量远远超过另一规则(少数类别)的事件量. 在这种具有高度不确定性的动态制造条件下, 保持AMHS的高性能和功能更加困难. 鉴于此, Lee, S.等81提出了一种用于在实际工厂中考虑类不平衡问题的存储分配动态调度系统. 该算法基于两个规则：推和拉. 在使用出发点和目的地机器的情况下, 该算法将确定与每个决策关联的存储需求：“推”规则将晶圆批次交付到最接近目的地的仓库；“拉”规则将晶圆批次发送到离出发点最近的仓库. 由于存储和目标之间传输时间短, 因此推送规则可以提高计算机的响应速度. 但更改目的地也会增加传输距离, 在这种情况下, “拉”法则的行进距离比“推”法则的行进距离短,但对计算机的响应较差. 显然, 这两个规则都有优点和缺点, 并且两个规则都不能比另一个更好. 因此需要针对制造条件选择最佳调度规则对于减少生产损失至关重要. 
+
+Lee, S.等81在此基础上提出了一种基于深度降噪自编码器(DDAE)的新颖性检测方法, 通过学习生产和AMHS的时变功能, 使得系统可以在每个决策点预测并选择最佳调度规则来确保稳定性, 通过提高传输和存储效率来防止吞吐量下降, 大大提高了生产率标准. 在动态条件下, 这可以实现最大的吞吐量和最大的机器利用率. 具体地, 使用DDAE获得具有较高表示形式的鲁棒特征, 同时考虑由“推”“拉”规则的使用频率差异引起的不平衡问题, 以识别最佳调度规则. 该研究实现了调度系统的实时版本, 并考虑了半导体制造的生产设备状态、物料搬运系统的稳定性和库存等信息, 证明了其在实际情况下的适用性.
+
+（81.	Lee, S., Kim, H. J. (2020). Dynamic dispatching system using a deep denoising autoencoder for semiconductor manufacturing. Applied Soft Computing, 86, 105904.
+82.	Lee, K. K. (2008). Fuzzy rule generation for adaptive scheduling in a dynamic manufacturing environment. Applied Soft Computing, 8(4), 1295-1304.
+83.	Scholz-Reiter, B., Heger, J. (2010, December). Gaussian processes for dispatching rule selection in production scheduling: Comparison of learning techniques. In 2010 IEEE International Conference on Data Mining Workshops (pp. 631-638). IEEE.
+84.	García-Álvarez, J., González, M. A. (2018). Metaheuristics for solving a real-world electric vehicle charging scheduling problem. Applied Soft Computing, 65, 292-306.
+85.	Choe, R., Kim, J. (2016). Online preference learning for adaptive dispatching of AGVs in an automated container terminal. Applied Soft Computing, 38, 647-660.
+86.	Heger, J., Branke, J., Hildebrandt, T. (2016). Dynamic adjustment of dispatching rule parameters in flow shops with sequence-dependent set-up times. International Journal of Production Research, 54(22), 6812-6824.） 
 
 
+\subsection{智慧医疗}
+
+\subsection{智慧城市}
+\subsubsection{用户身份验证}
+密码已成为用户身份验证的最常见解决方案, 尽管基于密码的用户身份验证易开发、易操作、易维护, 但如若第三方以某种方式获得了有效的用户密码, 它将变得毫无用处. 为克服仅基于密码的系统局限性, 开发了结合了密码与另一信息的阶段认证系统. 在这种二次身份验证方法中, 生物特征, 例如指纹、虹膜、语音和静脉特征等被广泛使用. 但这些生物特征需要能够识别相应特征的附加设备, 这可能是现有安全系统的重大负担96. 击键动态是指可以从单个用户的打字活动中获取的定量数据. 由于每个人都有独特的打字风格, 因此可以使用按键动力学来捕获特定用户特征, 从而识别用户. 该方式完全可以通过软件收集, 无需其他硬件.
+
+然而目前存在一旦授予登录名, 就无法监视当前用户是否仍为有效用户的问题, 同时对不同用户需要收集不同的功能集, 工作量巨大. 为了提高基于自由键入击键的用户身份验证的性能, 解决自由文本特征提取的困难, Kim, J.等96提出了一种基于用户自适应特征提取方法的新颖性检测算法. 该方法可以捕获嵌入在不同图的相对键入速度中各个用户的独特键入行为, 通过考虑两个连续键的键入速度来定义一组可变用户相关击键功能. 该方法考虑了所有有向图对的平均打字速度, 并将有向图的分配自适应调整为八个功能. 然后, 对五种新颖性检测算法：高斯密度估计(Gauss)、帕森窗密度估计(Parzen)、单类支持向量机(OCSVM)、K最近邻(KNN)以及K均值聚类(KMC)进行训练, 建立认证模型. 该方法主要使用有效用户的击键数据和一些冒名顶替者数据来训练新颖性检测算法, 以产生新颖性评分(成为冒名顶替者的可能性), 该分数用于确定当前打字用户是否有效. 该方法还可以建立用户打字风格身份验证模型. 
+
+（96.	Kim, J., Kim, H. (2018). Keystroke dynamics-based user authentication using freely typed text based on user-adaptive feature extraction and Novelty Detection. Applied Soft Computing, 62, 1077-1087.）
+
+\subsubsection{社交媒体新颖事件}
+互联网上每天都能生成数以千计的新闻文章, 涵盖各种主题104, 若想自动识别新颖且引起广泛关注的新闻, 不外乎是一个巨大挑战. 异构性是社交媒体的固有特征, 在其上发布的新闻不仅可以包含文本, 还可以包含图像、视频、时间信息、社交关系等信息. 据Gao等105调查发现有30％的博客发布带有图片内容, 并且这个数字还在持续增加, 因此, 社交媒体中的新颖性检测任务除了需处理新颖事件样本少的难题外, 其还需处理异构数据. 但当前针对Web内容的大多数新颖性检测技术仅处理文本内容和社交关系, 其余可视内容通常被忽略. 
+
+计算机视觉的最新进展使得能以极高精度从图像中提取信息, 以用作文本内容的补充, 这种文本与图像的融合将为新颖性检测添加更多相关信息. Alqhtani等106提出了一种基于非结构化数据检测推特推文新颖性的方法. 该方法首先通过文本分析判断推文的新颖性: 进行文本事件预处理, 使用TF-IDF技术生成代表文本的高维向量, 并根据TF-IDF分配的权重使用阈值确定哪些推文是新颖的. 若通过文本分析的推文被判断为不新颖, 则再利用视觉特性（包括方向梯度直方图（HOG）描述符，灰度级共生矩阵（GLCM）和颜色直方图）的基于图像事件检测方法进行判断, 最后由研究人员使用K近邻将图像分类为新颖性和非新颖性. 
+
+以上研究虽有成效, 但其仍然存在问题：(1)其使用了稀疏和高维向量表示非结构化数据；(2)并没有使用上下文信息；(3)非结构化数据虽有同时使用, 但实质上并没有融合应用. 基于此, Amorim, M.等108提出了针对异构社交媒体数据的新颖性检测架构, 并引入时间窗口定义事件新颖性,同时引入事件影响程度定义其新颖质量.该方法首先使用经过训练的MASK-RCNN网络融合文本和图像, 并使用自编码器对融合结果进行编码; 最后使用无监督算法对推文进行分类. 该方法中的数据融合解决了数据异构性问题；时间窗口解决了数据波动性问题；而新颖性质量解释了数据受众方面问题. 该方法较好地解答了如何将新颖性概念化为时间和受众函数这一问题, 其在来自推特推文的文本和图像数据集上进行了有效性验证. 该方法对仅有文本或仅有图像的数据情况仍适用.
+
+(104.	Aldhaheri, A. (2017, January). Event detection on large social media using temporal analysis. In 2017 IEEE 7th Annual Computing and Communication Workshop and Conference (CCWC) (pp. 1-6). IEEE.
+105.	Gao, Y., Zhao, S., Yang, Y. (2015, January). Multimedia social event detection in microblog. In International Conference on Multimedia Modeling (pp. 269-281). Springer, Cham.
+106.	S. M. Alqhtani, S. Luo, and B. Regan, Fusing text and image for event detection in Twitter, Int. J. Multimedia Appl., vol. 7, pp. 27-35, Feb. 2015.
+108.	Amorim, M., Bortoloti, F. D., Ciarelli, P. M., Salles, E. O、. (2019). Novelty Detection in Social Media by Fusing Text and Image Into a Single Structure. IEEE Access, 7, 132786-132802.)
+
+\subsection{智能经济}
+\subsubsection{电信欺诈检测}
+电信行业中的欺诈问题是一个重要的全球性问题, 会导致收入遭受重大损失. 据Fawcett, Provost估计, 欺诈问题会使电信部门每年损失数亿美元103. 在Mastorocostas定义中, 欺诈检测为使用技术来监控偏离规范的行为的领域, 这个定义与新颖性检测的定义非常接近, 因此可以通过新颖性检测来完成该任务. 
+
+传统新颖性检测技术主要针对工业问题而开发, 这些设置通常基于稳定正样本类别, 但将这些应用于人类行为起重要作用的情况下, 性能会显著下降. 例如在检测网络入侵时会产生较高的误报率, 同时由于入侵数据的多样性, 欺诈检测领域急需新方法. 鉴于此, Oosterlinck, D.等103结合知识规则提出了为未知类生成数据的方法. 该方法通过创建半合成的新颖性来改进现有方法, 为两个类别提供标记数据. 基于知识规则的专家系统建立了实际且具有代表性的场景, 描述了属于负样本的人类行为. 使用这些场景, 可以通过变量操作为负类生成实例. 该方法允许自由选择比率, 以替代过采样技术消除典型的数据不平衡问题. 该方法已在现实生活中的电信订购欺诈案中验证了有效性. 
+
+（103.	Oosterlinck, D., Benoit, D. F. (2020). From one-class to two-class classification by incorporating expert knowledge: Novelty Detection in human behaviour. European Journal of Operational Research, 282(3), 1011-1024.）
+
+\subsubsection{智能电网}
+在电网中, 非技术损耗(NTL)等于所供应电能与所支付电能之差, 并减去通过线路、变压器和其他设备产生的热量而损失的能量, 其实质为电力盗窃、欺诈或计量资产不足的结果, 该损耗会对公用事业和经济产生重大影响. 这种现象在许多发展中经济体间很普遍, 例如印度, 据估计该盗窃案占该国国内生产总值的1％以上99; 非技术损失的影响在发达国家也很巨大, 例如英国每年的电费盗窃损失估计为1.73亿英镑, 美国的盗窃损失可能高达60亿美元. 因此, 非技术损失的减少是实施智能电网概念所带来的潜在总收益的重要组成部分. 
+目前已尝试了多种基于数据分类与估计技术来检测非技术损失, 其中一些研究仅涉及窃电, 而另一些研究则涉及聚合的非技术损失, 但并未查明其来源的确切位置100,101. 考虑到可能会出现未预料到的攻击方式以及实际缺乏来自真实攻击的数据, 因此, Viegas, J. L.等99提出了一种检测智能电网中非技术损失来源的新颖性检测方法. 首先从收集的消费数据中计算出不规则消费指标, 其代表与类似消费者行为相比不规则的行为变化. 其次, 通过对从智能电表收集的数据进行Gustafson-Kessel模糊聚类来提取典型消费行为原型, 并将该原型用于基于距离的新颖性检测方法: 当测试数据与正常原型距离越远时, 其非技术损失分数越高, 就越表明可能有人正在窃电或是计量设备出现故障. 该方法还可以通过计算供电与计费之间的差异, 检测到大量的累积非技术损失, 这可以用于追溯窃贼或是出现故障的设备, 以商业损失的来源.该方法在实际数据用例上进行了有效性验证.
+（99.	Viegas, J. L., Esteves, P. R. (2018). Clustering-based Novelty Detection for identification of non-technical losses. 
+100.	Faria, L. T., Melo, J. D. (2015). Spatial-temporal estimation for nontechnical losses. IEEE Transactions on Power Delivery, 31(1), 362-369.
+101.	Buevich, M., Zhang, X., Schnitzer, D., Escalada, T., Jacquiau-Chamski, A., Thacker, J. (2015, November). Short paper: microgrid losses: when the whole is greater than the sum of its parts. In Proceedings of the 2nd ACM International Conference on Embedded Systems for Energy-Efficient Built Environments (pp. 95-98).）
 
 
+\subsubsection{硬件木马检测}
+（Shang, N., Wang, A., Ding, Y., Gai, K., Zhu, L. (2020). A machine learning based golden-free detection method for command-activated hardware Trojan. Information Sciences, 540, 292-307.）
 
 
+\subsection{其他}
+\subsubsection{搜寻超越标准模型}
+高能物理是一门大数据科学, 在使用有监督机器学习进行数据分析方面有着悠久的历史. 最近的开创性工作证明了深度神经网络在理解射流子结构92,93以及识别粒子甚至整个信号94的能力. 但高能物理实验的主要目标是搜寻超越标准模型（BSM）的新物理, 而有监督机器学习技术受训练期间引入的模型依赖性的影响. 如果将BSM物理解释为新颖信号, 这个问题则可以通过新颖性检测技术解决. 
+
+研究表明, 新颖性检测和有监督机器学习的结合可以为将来的高能物理数据分析奠定基础. 基于此, Hajer, J.等95提出了一组基于密度的新颖性评估器$O_{new}$和$O_{comb}$, 并设计了一种基于自编码器的新颖性检测算法. 具体地分为三个步骤：特征学习、降维、新颖性评估. 首先使用标记的已知模式在监督下对人工神经网络(ANN)进行训练. 训练后的ANN节点包含为分类收集的信息, 并构成特征空间. 由于特征空间通常具有较大维度, 为减少稀疏误差并提高分析效率, 该方法通过自编码器进行降维操作. 最后对测试数据的新颖性进行评估. 与传统的基于密度的方法相反, 它们仅对测试数据与已知模式的隔离程度进行量化, 并对未知模式测试数据的聚类敏感. 该算法随后用于检测大型强子对撞机和光子对撞机上的多个BSM基准, 也可以用于测量尚未发现的标准模型（SM）过程.
+
+（92.	Butter, A., Kasieczka, G., Plehn, T. (2017). Deep-learned top tagging using Lorentz invariance and nothing else. arXiv preprint arXiv:1707.08966.
+93.	Macaluso, S. (2018). Pulling out all the tops with computer vision and deep learning. Journal of High Energy Physics, 2018(10), 121.
+94.	Cohen, T., Freytsis, M. (2018). (Machine) learning to do more with less. Journal of High Energy Physics, 2018(2), 34.
+95.	Hajer, J., Li, Y. Y., Liu, T. (2020). Novelty Detection meets collider physics. Physical Review D, 101(7), 076015.）
+
+\subsubsection{球状星团检测}
+球状星团是一个恒星群体, 通常假设所涉及的恒星是同时由星际气体和尘埃的单一云团形成的, 因此其有助于有效追踪星系的形成和演化87. 从对恒星密度与速度剖面的影响推断出的球状星团与银河势的动力学相互作用, 也可用于研究星系的质量分布87. 因此, 其被称为研究恒星演化的绝佳对象. 检测有趣的恒星结构的技术通常需要全相空间或颜色信息, 特别是在天文数据的早期版本中, 这种信息并不总是有的, 例如经典的GAIA DR1数据包含高度准确的位置、视差等88, 但其既没有完整的相空间信息, 也没有恒星的颜色信息. 因此, 在不等待未来完备数据发布的情况下, 该领域的研究存在巨大的挑战. 
+
+基于此, Mohammadi, M.等87提出了两种独立策略：1.使用已知球状星团来检测相似结构策略；2.由于大多数天空都是空的,  因此可以采用新颖性检测技术来寻找有趣的恒星结构. 该团队首先使用三维核密度估计作为特征输入, 并由最近邻检索和新颖性检测技术联合查找可能的候选对象. 其中, 最近邻检索使用动态时间规整算法(DTW)在测试集中查找与训练集中最相似的分布；新颖性检测基于内核, 使用随机天空窗口来训练支持向量数据描述算法(SVDD), 以获得描述典型无趣窗口的模型. 两种策略都能找到用于测试的已知球状星团中的大多数, 并且还可以描绘出对发现的潜在候选物的重叠协议. 当它们的超参数很大时, 这些方法可能会给出错误的正候选, 因此使用高斯差分滤波器来对候选对象最终判断. 该方法的有效性已在GAIA DR1上进行了验证.
+
+(87.	Mohammadi, M., Petkov, N., Bunte, K., Peletier, R. F. (2019). Globular cluster detection in the gaia survey. Neurocomputing, 342, 164-171.
+88.	Mor Crespo, R., Romero Gómez, M., González Vidal, J. J., Portell i de Mora, J., Jordi i Nebot, C., Luri Carrascoso, X. (2016). Gaia Data Release 1: Summary of the astrometric, photometric and survey properties. 2016, vol. 595, p. A2.)
+
+\subsubsection{可变星检测}
+天体物理对象的可变性有效分类对于确定后续观测和分析而言至关重要. 然而, 具有新可变性特征的物体识别很大程度上依赖于人类专家视觉检查. 由于原始光照曲线的观测周期数目多且不均匀, 很少使用原始光曲线对分类器进行训练, 取而代之的是获得低维“特征”, 同时其手动选择功能仍需大量人工参与89. 
+
+基于此, Tsang, B. T. H.等89提出了一种双网络结构的周期光曲线分类器, 允许同时训练可变星光曲线的特征提取、分类和新颖样本检测. 该网络结合了用于无监督特征提取的递归神经网络自编码器和用于监督分类、新颖性检测的双重目的估计网络, 前者用于原曲线的特征提取, 后者在降维特征空间中优化高斯混合模型, 其中每个高斯分量对应一个变量类. 自编码器和估计网络同时训练, 提高了自编码器的训练效率和整体性能. 当对预提取的特征进行训练时, 网络仍能产生令人满意的结果. 该网络结构已应用于ASAS-SN变星数据库中的光曲线中, 分类准确率达到99\%, 并且能够检测到以前看不到的变异类型.
+
+（89.	Tsang, B. T. H. (2019). Deep Neural Network Classifier for Variable Stars with Novelty Detection Capability. The Astrophysical Journal Letters, 877(2), L14.）
+
+\subsubsection{气味新颖性检测}
+新颖性检测是生物体必须解决的基本生物学问题, 有助于提醒生物体注意新的和潜在的显著事件80. 在计算机科学中, 通常使用称为布隆过滤器(Bloom Filter)的数据结构解决此问题, 它通过回答“$x$是否属于$S$？”这个问题, 其中$x$是某个查询项, $S$是查询数据库, 若$x$不属于$S$, 则该查询项被认为是新颖的. 
+
+进一步调查研究发现, 果蝇嗅觉回路进化出了一种布隆过滤器变体, 可以评估气味的新颖性. 与传统布隆过滤器相比, 果蝇根据两个附加功能来调整新颖性响应：气味与之前气味的相似性以及自上次气味以来所经过的时间. 受其进化的简单空间高效数据结构的影响, Dasgupta, S.等80提出了一种新框架以用于预测果蝇对气味对的新颖性响应, 该方法持续重视新颖性, 重视距离灵敏度(气味相对于类似气味的新颖性应小于气味相对于非常不同的气味新颖性), 提高了时间敏感性(若很久之前最后一次闻到相同或相似的气味, 则其新颖性应该比最近闻到该气味更大). 该方法提出了使用$KC\rightarrow MBON-\alpha{'}3$突触存储一个布隆过滤器用于新颖性检测, 其中$mKC\rightarrow MBON-\alpha{'}3$ 突触代表了布隆过滤器中的$m$位存储, 气味的$k$个活性凯尼恩细胞(KCs)索引作为气味的$k$个哈希位置. 当一种气味出现时(即插入过滤器中), $m$个突触的强度都会被改变, 设$w\left( i \right)$对应第$i$个$KC$的权值$MBON-\alpha'3$突触. 最初每个$w\left( i \right) =1$, 观察到气味$x$后, 各突触权重会发生变化. 该方法在DoOR 2.0数据集上进行评估后, 性能优于先前过滤器, 其也在MINST等图像数据集上进行了有效性验证. 该工作阐明了重要神经生物学问题的算法基础, 并为计算系统中的新颖性检测提供了策略.
+
+（80.	Dasgupta, S., Sheehan, T. C., Stevens, C. F. (2018). A neural data structure for Novelty Detection. Proceedings of the National Academy of Sciences, 115(51), 13093-13098.）
 
 
+\section{总结}
 
+针对近年来鲜有对新颖性检测领域进行完整严谨的现状, 本文新颖地运用多层次分类方法, 从方法适配数据层面以及应用层面综述了新颖性检测的研究现状, 这样可以方便其他研究领域研究者在想识别其领域数据集的“新颖”或“未知”内容时, 有方法可循. 本文独特分析角度, 或许可以启发研究者以数据驱动的思想, 把握分析各个数据领域新颖动向；同时不同数据类型上思想和方法上的碰撞, 也可以帮助研究者们思考出应用更为广泛的新颖性检测算法. 
 
+本文还探究了各个国家在新颖性检测领域的活跃程度, 根据数据分析显示, 美国和中国是众多国家中新颖性检测领域发表量最大的国家, 远比第三名的英国高了近4/5. 令人惊讶的是, 尽管中国和美国一样发挥了主导作用, 但中国的国际合作率却相对较低. 这主要归因于中国国内众多研究机构之间的合作较强, 而这种高水平的国内合作可能会削弱国际合作, 从而降低了学术影响力. 从图四所有国家间的合作关系图也可以看出这一点. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+此外, 本文还分析了各个机构间的合作关系, 这样可以帮助研究人员找到更多同领域机构与其合作, 合作网络如图6所示, 可以看出2017-2020年间在本领域, 各个机构之间的发表论文数量相差无几. 其中比较领先的机构为鲁汶大学, 其发表的论文最多, 共发表了6篇文献, 其次是加利福尼亚大学, 高丽大学、麻省理工学院、清华大学、中国人民解放军国防科技大学紧随其后. 这些机构在发展和促进新颖性检测研究方面发挥了重要作用.
 
 
 
