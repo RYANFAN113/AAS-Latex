@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.3.15)  15 APR 2021 21:09
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2019.3.15)  23 APR 2021 12:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1089,30 +1089,140 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip67
 )
 \aas@linespace=\skip68
+) (d:/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+ (d:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (d:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (d:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (d:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (d:/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (d:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen198
+\Hy@linkcounter=\count291
+\Hy@pagecounter=\count292
+ (d:/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count293
+ (d:/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4383.
+ (d:/texlive/2018/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count294
+ (d:/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen199
+\Fld@menulength=\count295
+\Field@Width=\dimen256
+\Fld@charsize=\dimen257
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count296
+\c@Item=\count297
+\c@Hfootnote=\count298
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+ (d:/texlive/2018/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2018/02/06 v6.86b Hyperref driver for XeTeX
+ (d:/texlive/2018/texmf-dist/tex/generic/oberdiek/stringenc.sty
+Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO)
+)
+\pdfm@box=\box60
+\c@Hy@AnnotLevel=\count299
+\HyField@AnnotCount=\count300
+\Fld@listcount=\count301
+\c@bookmark@seq@number=\count302
+ (d:/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip69
 ) (d:/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
-\c@tracingmulticols=\count291
-\mult@box=\box60
-\multicol@leftmargin=\dimen198
-\c@unbalance=\count292
-\c@collectmore=\count293
-\doublecol@number=\count294
-\multicoltolerance=\count295
-\multicolpretolerance=\count296
-\full@width=\dimen199
-\page@free=\dimen256
-\premulticols=\dimen257
-\postmulticols=\dimen258
-\multicolsep=\skip69
-\multicolbaselineskip=\skip70
-\partial@page=\box61
-\last@line=\box62
-\maxbalancingoverflow=\dimen259
-\mult@rightbox=\box63
-\mult@grightbox=\box64
-\mult@gfirstbox=\box65
-\mult@firstbox=\box66
-\@tempa=\box67
+\c@tracingmulticols=\count303
+\mult@box=\box61
+\multicol@leftmargin=\dimen258
+\c@unbalance=\count304
+\c@collectmore=\count305
+\doublecol@number=\count306
+\multicoltolerance=\count307
+\multicolpretolerance=\count308
+\full@width=\dimen259
+\page@free=\dimen260
+\premulticols=\dimen261
+\postmulticols=\dimen262
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box62
+\last@line=\box63
+\maxbalancingoverflow=\dimen263
+\mult@rightbox=\box64
+\mult@grightbox=\box65
+\mult@gfirstbox=\box66
+\mult@firstbox=\box67
 \@tempa=\box68
 \@tempa=\box69
 \@tempa=\box70
@@ -1129,85 +1239,86 @@ Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
 \@tempa=\box81
 \@tempa=\box82
 \@tempa=\box83
-\c@columnbadness=\count297
-\c@finalcolumnbadness=\count298
-\last@try=\dimen260
-\multicolovershoot=\dimen261
-\multicolundershoot=\dimen262
-\mult@nat@firstbox=\box84
-\colbreak@box=\box85
-\mc@col@check@num=\count299
+\@tempa=\box84
+\c@columnbadness=\count309
+\c@finalcolumnbadness=\count310
+\last@try=\dimen264
+\multicolovershoot=\dimen265
+\multicolundershoot=\dimen266
+\mult@nat@firstbox=\box85
+\colbreak@box=\box86
+\mc@col@check@num=\count311
 ) (d:/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip71
-\subfigcapskip=\skip72
-\subfigcaptopadj=\dimen263
-\subfigbottomskip=\skip73
-\subfigcapmargin=\dimen264
-\subfiglabelskip=\skip74
-\c@subfigure=\count300
-\c@lofdepth=\count301
-\c@subtable=\count302
-\c@lotdepth=\count303
+\subfigtopskip=\skip72
+\subfigcapskip=\skip73
+\subfigcaptopadj=\dimen267
+\subfigbottomskip=\skip74
+\subfigcapmargin=\dimen268
+\subfiglabelskip=\skip75
+\c@subfigure=\count312
+\c@lofdepth=\count313
+\c@subtable=\count314
+\c@lotdepth=\count315
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (d:/texlive/2018/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip75
-\subfig@bottom=\skip76
+\subfig@top=\skip76
+\subfig@bottom=\skip77
 ) (d:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip77
+\@mathmargin=\skip78
 
 For additional information on amsmath, use the `?' option.
 (d:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
  (d:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
-\ex@=\dimen265
+\@emptytoks=\toks19
+\ex@=\dimen269
 )) (d:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen266
+\pmbraise@=\dimen270
 ) (d:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count304
+\inf@bad=\count316
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count305
-\leftroot@=\count306
+\uproot@=\count317
+\leftroot@=\count318
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count307
-\DOTSCASE@=\count308
+\classnum@=\count319
+\DOTSCASE@=\count320
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box86
-\strutbox@=\box87
-\big@size=\dimen267
+\Mathstrutbox@=\box87
+\strutbox@=\box88
+\big@size=\dimen271
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count309
-\c@MaxMatrixCols=\count310
-\dotsspace@=\muskip17
-\c@parentequation=\count311
-\dspbrk@lvl=\count312
-\tag@help=\toks19
-\row@=\count313
-\column@=\count314
-\maxfields@=\count315
-\andhelp@=\toks20
-\eqnshift@=\dimen268
-\alignsep@=\dimen269
-\tagshift@=\dimen270
-\tagwidth@=\dimen271
-\totwidth@=\dimen272
-\lineht@=\dimen273
-\@envbody=\toks21
-\multlinegap=\skip78
-\multlinetaggap=\skip79
-\mathdisplay@stack=\toks22
+\macc@depth=\count321
+\c@MaxMatrixCols=\count322
+\dotsspace@=\muskip18
+\c@parentequation=\count323
+\dspbrk@lvl=\count324
+\tag@help=\toks20
+\row@=\count325
+\column@=\count326
+\maxfields@=\count327
+\andhelp@=\toks21
+\eqnshift@=\dimen272
+\alignsep@=\dimen273
+\tagshift@=\dimen274
+\tagwidth@=\dimen275
+\totwidth@=\dimen276
+\lineht@=\dimen277
+\@envbody=\toks22
+\multlinegap=\skip79
+\multlinetaggap=\skip80
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 ) (d:/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -1220,10 +1331,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (d:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (d:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
-) (d:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+ (d:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
  (d:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -1234,58 +1342,59 @@ Package graphics Info: Driver file: xetex.def on input line 99.
  (d:/texlive/2018/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen274
-\Gin@req@width=\dimen275
-) (d:/texlive/2018/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip18
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+\Gin@req@height=\dimen278
+\Gin@req@width=\dimen279
 ) (d:/texlive/2018/texmf-dist/tex/latex/ccaption/ccaption.sty
 Package: ccaption 2011/08/07 v3.2c Extended captioning and new floats
-\@contcwidth=\skip80
-\@contindw=\skip81
-\abovelegendskip=\skip82
-\belowlegendskip=\skip83
-\c@newflo@tctr=\count316
+\@contcwidth=\skip81
+\@contindw=\skip82
+\abovelegendskip=\skip83
+\belowlegendskip=\skip84
+\c@newflo@tctr=\count328
 ) (d:/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen276
-\lightrulewidth=\dimen277
-\cmidrulewidth=\dimen278
-\belowrulesep=\dimen279
-\belowbottomsep=\dimen280
-\aboverulesep=\dimen281
-\abovetopsep=\dimen282
-\cmidrulesep=\dimen283
-\cmidrulekern=\dimen284
-\defaultaddspace=\dimen285
-\@cmidla=\count317
-\@cmidlb=\count318
-\@aboverulesep=\dimen286
-\@belowrulesep=\dimen287
-\@thisruleclass=\count319
-\@lastruleclass=\count320
-\@thisrulewidth=\dimen288
+\heavyrulewidth=\dimen280
+\lightrulewidth=\dimen281
+\cmidrulewidth=\dimen282
+\belowrulesep=\dimen283
+\belowbottomsep=\dimen284
+\aboverulesep=\dimen285
+\abovetopsep=\dimen286
+\cmidrulesep=\dimen287
+\cmidrulekern=\dimen288
+\defaultaddspace=\dimen289
+\@cmidla=\count329
+\@cmidlb=\count330
+\@aboverulesep=\dimen290
+\@belowrulesep=\dimen291
+\@thisruleclass=\count331
+\@lastruleclass=\count332
+\@thisrulewidth=\dimen292
 ) (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 17.
+LaTeX Info: Redefining \selectfont on input line 18.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1293,56 +1402,56 @@ LaTeX Info: Redefining \selectfont on input line 17.
 .................................................
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 17.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 17.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 17.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 17.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 17.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 17.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 17.
-LaTeX Font Info:    Redeclaring math accent \check on input line 17.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 17.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 17.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 17.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 17.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 18.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 18.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 18.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 18.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 18.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 18.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 18.
+LaTeX Font Info:    Redeclaring math accent \check on input line 18.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 18.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 18.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 18.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 18.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 17.
+(Font)              `operators' in the math version `normal' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 17.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 18.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 17.
+(Font)              `operators' in the math version `bold' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 17.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 17.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 17.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 17.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 17.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 17.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 17.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 17.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 17.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 18.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 17.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 18.
  (./Style/aas.cfg)
 *************************************************
 * ctex warning: "deprecated-command"
@@ -1350,7 +1459,23 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * Command \CTEXindent is deprecated.
 * \parindent is set to 2\ccwd .
 *************************************************
-\g__fontspec_family_SimHei_int=\count321
+\AtBeginShipoutBox=\box89
+Package hyperref Info: Link coloring OFF on input line 18.
+(d:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (d:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count333
+)
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
+ (./template.out) (./template.out)
+\@outlinefile=\write3
+\openout3 = `template.out'.
+
+\g__fontspec_family_SimHei_int=\count334
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1377,15 +1502,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 . - 'normal' (m/n) with NFSS spec.: <->"SimHei/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
-LaTeX Font Info:    Try loading font information for U+msa on input line 111.
-(d:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 90.
+ (d:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 111.
+LaTeX Font Info:    Try loading font information for U+msb on input line 90.
  (d:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\g__fontspec_family_FangSong_int=\count322
+\g__fontspec_family_FangSong_int=\count335
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1413,6 +1538,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 . <->"FangSong/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
+
+Underfull \vbox (badness 1648) has occurred while \output is active []
+
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1451,12 +1579,9 @@ Overfull \vbox (13.2832pt too high) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (16.5466pt too wide) in alignment at lines 155--155
+Overfull \hbox (52.12596pt too wide) in alignment at lines 133--133
 [][][][]
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \vbox (12.24226pt too high) has occurred while \output is active []
@@ -1504,6 +1629,15 @@ Overfull \vbox (12.31282pt too high) has occurred while \output is active []
 Overfull \vbox (12.24226pt too high) has occurred while \output is active []
 
  [8]
+
+LaTeX Warning: Citation `cavadas2013damage' on page 9 undefined on input line 332.
+
+
+LaTeX Warning: Citation `zhang2019damage' on page 9 undefined on input line 334.
+
+Missing character: There is no λ in font cmmi10!
+Missing character: There is no λ in font cmmi10!
+
 Overfull \hbox (2.33975pt too wide) has occurred while \output is active
 [] 
  []
@@ -1515,9 +1649,6 @@ Overfull \vbox (12.31282pt too high) has occurred while \output is active []
 Overfull \vbox (12.24226pt too high) has occurred while \output is active []
 
  [10]
-Missing character: There is no λ in font cmmi10!
-Missing character: There is no λ in font cmmi10!
-
 Overfull \hbox (2.33975pt too wide) has occurred while \output is active
 [] 
  []
@@ -1537,6 +1668,11 @@ Overfull \hbox (2.33975pt too wide) has occurred while \output is active
 Overfull \vbox (12.31282pt too high) has occurred while \output is active []
 
  [13]
+Underfull \hbox (badness 10000) in paragraph at lines 448--451
+\TU/lmr/m/n/10.53937 based Novelty Detection for mobile robots.
+ []
+
+
 Overfull \vbox (12.24226pt too high) has occurred while \output is active []
 
  [14]
@@ -1548,11 +1684,6 @@ Overfull \hbox (2.33975pt too wide) has occurred while \output is active
 Overfull \vbox (12.31282pt too high) has occurred while \output is active []
 
  [15]
-Underfull \hbox (badness 10000) in paragraph at lines 522--525
-\TU/lmr/m/n/10.53937 based Novelty Detection for mobile robots.
- []
-
-
 Overfull \vbox (12.24226pt too high) has occurred while \output is active []
 
  [16]
@@ -1586,65 +1717,12 @@ Overfull \hbox (2.33975pt too wide) has occurred while \output is active
 Overfull \vbox (12.31282pt too high) has occurred while \output is active []
 
  [21]
+File: Image/ssl.eps Graphic file (type eps)
+<Image/ssl.eps>
+
 Overfull \vbox (12.24226pt too high) has occurred while \output is active []
 
  [22]
-
-LaTeX Font Warning: Command \sl invalid in math mode on input line 740.
-
-
-LaTeX Font Warning: Command \sl invalid in math mode on input line 740.
-
-
-LaTeX Font Warning: Command \sl invalid in math mode on input line 740.
-
-
-LaTeX Font Warning: Command \sl invalid in math mode on input line 740.
-
-File: Image/01.eps Graphic file (type eps)
-<Image/01.eps>
-
-Underfull \hbox (badness 7168) in paragraph at lines 810--813
-[]\TU/lmr/m/n/10.53937 T[]X \TU/SimSun(0)/m/n/10.53937 的 参 考 文 献 的 引 用 比 较 方 便\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 比
- []
-
-
-Underfull \hbox (badness 7186) in paragraph at lines 810--813
-\TU/SimSun(0)/m/n/10.53937 以 输 入 \TU/lmr/m/n/10.53937 “The T[]Xbook[]\TU/lmtt/m/n/10.53937 $^{[1]}$\TU/lmr/m/n/10.53937 ” \TU/SimSun(0)/m/n/10.53937 得 到 想 要
- []
-
-
-Overfull \hbox (2.33975pt too wide) has occurred while \output is active
-[] 
- []
-
-
-Overfull \vbox (12.31282pt too high) has occurred while \output is active []
-
- [23]
-Overfull \hbox (0.62778pt too wide) in alignment at lines 891--891
-[][][][][]
- []
-
-File: Image/02a.eps Graphic file (type eps)
-<Image/02a.eps>
-File: Image/02b.eps Graphic file (type eps)
-<Image/02b.eps>
-
-Overfull \vbox (12.24226pt too high) has occurred while \output is active []
-
- [24]
-Underfull \hbox (badness 10000) in paragraph at lines 938--939
-[]\TU/lmr/m/n/7.52812 The Math Works.Image Processing Toolbox for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 938--939
-\TU/lmr/m/n/7.52812 Use with Matlab: User$[]$s Guide [Online], available:
- []
-
-File: Image/ssl.eps Graphic file (type eps)
-<Image/ssl.eps>
 File: Image/nmzuo.eps Graphic file (type eps)
 <Image/nmzuo.eps>
 File: Image/zz.eps Graphic file (type eps)
@@ -1657,14 +1735,29 @@ Overfull \hbox (2.33975pt too wide) has occurred while \output is active
 
 Overfull \vbox (12.31282pt too high) has occurred while \output is active []
 
- [25] (./template.aux) ) 
-Here is how much of TeX's memory you used:
- 16866 strings out of 494927
- 391159 string characters out of 6177075
- 489151 words of memory out of 5000000
- 20511 multiletter control sequences out of 15000+600000
- 541245 words of font info for 100 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 60i,13n,70p,10499b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
+ [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 864.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 864.
+ (./template.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 864.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 864.
+Package rerunfilecheck Info: File `template.out' has not changed.
+(rerunfilecheck)             Checksum: 5144EEA65ED332A3A6BA79A1ABC587B5.
 
-Output written on template.pdf (25 pages).
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 23896 strings out of 494927
+ 489166 string characters out of 6177075
+ 616391 words of memory out of 5000000
+ 27495 multiletter control sequences out of 15000+600000
+ 541589 words of font info for 99 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 60i,10n,70p,10499b,813s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on template.pdf (23 pages).
